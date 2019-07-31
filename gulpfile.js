@@ -25,7 +25,8 @@ gulp.task('rename', async () => {
         './index.html',
         './package.json',
         './polymer.json',
-        './src/pho3nix-element.ts'
+        './src/pho3nix-element.ts',
+        './README.md'
     ];
     
     const oldName = 'pho3nix-element';
