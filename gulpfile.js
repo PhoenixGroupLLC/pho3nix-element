@@ -15,6 +15,7 @@ gulp.task('serve', () => {
   };
   spawn('tsc', ['--watch'], spawnOptions);
   spawn('polymer', ['serve', '-p', '8080', '-H', '0.0.0.0'], spawnOptions);
+  spawn('sass', ['--watch', './src:./src'], spawnOptions);
 });
 
 gulp.task('rename', async () => {
@@ -31,7 +32,7 @@ gulp.task('rename', async () => {
     
     const oldName = 'pho3nix-element';
     const oldNameRegex = new RegExp(oldName, 'gi');
-    const newName = await ask('What will be your element\'s tagName?');
+    const newName = await ask('What will be your element\'s tag-name?');
     const oldClassName = dash2Pascal(oldName);
     const newClassName = dash2Pascal(newName);
 
