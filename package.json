@@ -11,7 +11,7 @@
     "start": "gulp serve",
     "build": "tsc && polymer build",
     "serve": "polymer serve --hostname 0.0.0.0 --port 8080 build/esm-bundled",
-    "docker:dev": "docker run -it -p 0.0.0.0:8080:8080 -v %CD%:/usr/src/app pho3nixhun/lit-dev::14-alpine /bin/bash"
+    "docker:dev": "docker run -it -p 0.0.0.0:8080:8080 -v %CD%:/usr/src/app pho3nixhun/lit-dev:14-alpine /bin/bash"
   },
   "dependencies": {
     "@webcomponents/webcomponentsjs": "^2.2.10",
